@@ -4,7 +4,7 @@ from pytube import YouTube
 
 def startDownload():
     try:
-        title.configure(text="Starting download...", text_color="black")
+        
         # Getting the YouTube link and creating a YouTube object
         ytLink = link.get()
         ytObject = YouTube(ytLink, on_progress_callback=on_progress)

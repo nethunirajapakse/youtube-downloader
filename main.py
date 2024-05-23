@@ -11,7 +11,7 @@ def startDownload():
         video = ytObject.streams.get_highest_resolution()
 
         # Updating the title to show that the download is in progress
-        title.configure(text="Downloading: " + ytObject.title, text_color="blue")
+        title.configure(text="Downloading " + ytObject.title, text_color="blue")
 
         # Downloading the video
         video.download()

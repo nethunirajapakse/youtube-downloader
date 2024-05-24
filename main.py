@@ -10,6 +10,13 @@ def startDownload():
         ytObject = YouTube(ytLink, on_progress_callback=on_progress)
         video = ytObject.streams.get_highest_resolution()
 
+        
+        
+        if not video:
+            finishedLabel.configure(text="Selected resolution not available", text_color="red")
+            return
+
+
         # Updating the title to show that the download is in progress
         title.configure(text="Downloading " + ytObject.title, text_color="blue")
 

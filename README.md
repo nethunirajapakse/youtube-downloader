@@ -1,3 +1,4 @@
-##YouTube Downloader
+📥 YouTube Downloader
 
-Simple YouTube Downloader application built using Python and the 'customtkinter' library for the GUI, and 'pytube' for handling the YouTube video downloads.
+A Simple YouTube Downloader application built with Python using the customtkinter library for a sleek GUI and pytube for hassle-free video downloads.
+
